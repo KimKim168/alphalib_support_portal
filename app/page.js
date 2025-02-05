@@ -11,9 +11,8 @@ const products = [
 export default function Home() {
   return (
     <>
-    
     <div className="max-w-screen-2xl mx-auto min-h-screen pb-14 px-5 xl:px-16">
-      <h1 className="text-xl md:text-2xl font-medium text-blue-900 text-center mt-10">Alphalib Support Portal Member Only </h1>
+      <h1 className="text-xl md:text-3xl font-medium text-blue-900 text-center mt-10">Alphalib Support Portal Member Only </h1>
       <div className="grid grid-cols-12 gap-5 mt-10">
         <div className="hidden xl:block col-span-2"><SidebarMenu/></div>
         <div className="col-span-12 xl:col-span-10 space-y-10">
