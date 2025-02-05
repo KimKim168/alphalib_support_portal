@@ -116,7 +116,7 @@ export default function MyForm() {
               control={form.control}
               name="SelectServices"
               render={({ field }) => (
-                <FormItem className="border border-[#03254E] rounded-md">
+                <FormItem className="border border-[#03254E] bg-[#03254E] text-white  rounded-md">
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}

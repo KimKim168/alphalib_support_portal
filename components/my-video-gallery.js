@@ -58,10 +58,10 @@ export default function MyVideoGallery({ className }) {
     <>
       <div className={`grid grid-cols-2 gap-2 sm:grid-cols-3  ${className}`}>
         {videos.map((item, index) => (
-          <div className="flex flex-col space-y-3">
+          <div className="flex flex-col space-y-3 bg-gray-50 rounded-md pb-3">
           <div
             key={index}
-            className="overflow-hidden border rounded-md shadow-md cursor-pointer group aspect-video"
+            className="overflow-hidden border rounded-t-md shadow-md cursor-pointer group aspect-video"
             onClick={() => {
               setCurrentIndex(index);
               setIsOpen(true);
@@ -78,7 +78,7 @@ export default function MyVideoGallery({ className }) {
               </span>
             </div>
           </div>
-           <p className="text-base leading-tight text-black line-clamp-2 hover:underline dark:text-white">{item.title}</p>
+           <p className="text-base px-2 leading-tight text-black line-clamp-2 hover:underline dark:text-white">{item.title}</p>
            </div>
         ))}
        
